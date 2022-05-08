@@ -1,7 +1,0 @@
-{
-    "defaultSeverity": "error",
-    "extends": "airbnb",
-    "jsRules": {},
-    "rules": {},
-    "rulesDirectory": []
-}
