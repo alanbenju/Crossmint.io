@@ -21,9 +21,9 @@ Example error:
 
 ## SCRIPT ##
 This project uses Node with Typescript 
-`npm run start`: Run the script
-`npm run test`: Run tests with jest
-`npm run lint`: Check if code fulfills linter rules
+- `npm run start`: Run the script
+- `npm run test`: Run tests with jest
+- `npm run lint`: Check if code fulfills linter rules
 
 ## TODOS ##
 - Add delay and retries for crossmint api calls
