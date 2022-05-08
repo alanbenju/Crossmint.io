@@ -12,8 +12,8 @@ Example error:
 
 - Even though the Crossmint API returns 200 code sometimes the AstralObject isn't created
 - A position that doesn't exist in the map can be deleted and that will generate a "SPACE" on it causing the map to be invalidated. There is no "reset" endpoint to start over when this happens
-- Made a mistake and a position was created with "wrong" params: a cometh with direction "purple" and then the position is invalidated and can't be deleted or modified until after trying multple time the same thing, it does (???????)
-    - if delete or post: 
+- If a position is created with "wrong" params: a cometh with direction "purple" and then the position is invalidated and can't be deleted or modified until after trying multple time the same thing, it does (???????)
+    - e.g: delete or post: 
     `{
             "error": true,
             "message": "Cannot set property '24' of undefined"
