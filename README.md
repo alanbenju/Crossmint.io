@@ -5,7 +5,7 @@
 - Each goal map has Polyanets/Soloons/Comeths or spaces on each position
 - Astral Objects have to be created with Crossmint API into candidate map for the current stage
 
-# Crossmint API Bugs
+## Crossmint API Bugs ##
 Once in a while Crossmint API starts failing for some requests, because of this every POST Crossmint request has a (one) retry attempt with 5 seconds delay
 Example error: 
 - message: 'Cannot call `candidates.findOne()` before initial connection is complete if `bufferCommands = false`. Make sure you `await mongoose.connect()` if you have `bufferCommands = false`.'
@@ -25,7 +25,7 @@ This project uses Node with Typescript
 `npm run test`: Run tests with jest
 `npm run lint`: Check if code fulfills linter rules
 
-# TODOS
+## TODOS ##
 - Add delay and retries for crossmint api calls
 - Add tests for more cases
 - Add unit tests for every remaining class
