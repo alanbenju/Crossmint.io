@@ -5,7 +5,6 @@ const candidateId = "8ac28fdc-39a0-4502-9a0a-64597ce40a74"
 
 async function _createPolyanet(row: number, column: number) {
     if (column == undefined || row == undefined) return Promise.resolve({ err: "Missing params" });
-    if (!candidateId) return Promise.resolve({ err: "Missing candidateId" })
     const body = {
         candidateId,
         row,
@@ -35,7 +34,6 @@ export async function createPolyanet(row: number, column: number): Promise<IResp
 
 async function _createSoloon(row: number, column: number, color: string): Promise<IResponse> {
     if (column == undefined || row == undefined || !color) return Promise.resolve({ err: "Missing params" });
-    if (!candidateId) return Promise.resolve({ err: "Missing candidateId" })
     const body = {
         candidateId,
         row,
@@ -67,7 +65,6 @@ export async function createSoloon(row: number, column: number, color: string): 
 
 async function _createCometh(row: number, column: number, direction: string): Promise<IResponse> {
     if (column == undefined || row == undefined || !direction) return Promise.resolve({ err: "Missing params" });
-    if (!candidateId) return Promise.resolve({ err: "Missing candidateId" })
     const body = {
         candidateId,
         row,
@@ -98,7 +95,6 @@ export async function createCometh(row: number, column: number, direction: strin
 }
 
 export async function getGoal(): Promise<IResponse> {
-    if (!candidateId) return Promise.resolve({ err: "Missing candidateId" })
     return axios.get(`https://challenge.crossmint.io/api/map/${candidateId}/goal`,).then((res: IGoalResponse) => {
         return {
             result: res.data.goal
